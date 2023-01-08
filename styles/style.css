@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+:root{
+    --primary:#3155e7;
+    --primary-dark:#2045d6;
+    --black:#010101;
+    --gray-1 :#788190;
+    --gray-2:#d3d4db;
+    --white:#FFFFFF;
+    --body:#fefefe;
+}
+
+body{
+    font-family: 'plus Jakarta Sans',sans-serif;
+    background-color: var(--body);
+}
+/* buttons */
+.btn{
+    border-radius: 9px;
+}
+.btn-primary,.btn-outline-secondary{
+    padding: 12px 20px;
+}
+.btn-primary{
+    background-color: var(--primary);
+}
+.btn-primary:hover{
+    background-color: var(--primary-dark);
+}
+.btn-outline-secondary{
+    border: 1px solid var(--gray-2);
+    color: var(--black);
+}
+.btn-outline-secondary:hover{
+    background-color: var(--gray-2);
+    border: 1px solid var(--gray-2);
+    color: var(--black);
+}
+.btn-outline-secondary:focus{
+    background-color: var(--gray-2);
+    border: 1px solid var(--gray-2);
+    color: var(--black);
+}
+/* ---------------------------------------------------  */
+/* navbar */
+.navbar .btn-outline-secondary{
+    border: 1px solid var(--gray-2);
+    color:var(--black);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    padding: 10px 16px;
+}
+.navbar{
+    padding: 30px 0;
+}
+.nav-link{
+    margin-left: 41px;
+    font-size: 16px;
+    color: var(--gray-1);
+}
+.navbar-nav .nav-link.active{
+    font-weight: bold;
+    color: var(--black);
+}
+/* --------------------------------------------------- */
+/* featuers section */
+section.featuers{
+    padding: 80px 0;
+}
+section.featuers .text-center{
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 73px;
+    color: var(--black);
+}
+.buttons{
+    padding-top: 69px;
+}
+.buttons .btn{
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 24px;
+}
+/* --------------------------------------------------- */
+/* firstGame Section */
+section.firstGame .text,section.secondGame .text,section.thirdGame .text,section.fourthGame .text{
+    padding: 134px  0;
+}
+section.firstGame h5,section.secondGame h5,section.thirdGame h5,section.fourthGame h5{
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 48px;
+    color: var(--black);
+}
+section.firstGame p,section.secondGame p,section.thirdGame p,section.fourthGame p{
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 28px;
+    color: var(--gray-1);
+    padding-top: 20px;
+}
+/* --------------------------------------------------- */
+a{
+    text-decoration: none;
+}
+.info {
+    position: relative;
+    padding: 20px;
+}
+.info h2 {
+    color: #00175f;
+    font-size: 34px;
+}
+.info h3 {
+    color: #0097ff;
+    letter-spacing: 1.2px;
+    margin-top:  20px;
+}
+svg{
+    width: 25px;
+    margin: 40px;
+}
+.location{
+    margin: 40px;
+}
+footer { 
+    margin-top: 20px;
+    background-color: gray;
+}
