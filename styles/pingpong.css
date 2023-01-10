@@ -55,3 +55,35 @@
     0%{transform: rotate(180deg);}
     100%{transform: rotate(360deg);}
 }
+
+ .but{
+    cursor: pointer;
+    border: 3px solid rgb(192, 190, 190);
+    color: #111727;
+    border-radius: 10px;
+    width: fit-content;
+    margin: auto;
+    padding: 15px;
+    margin-top: 15px;
+    font-size: 30px;
+    transition: all .2s ease;
+    background-color: #FFA837 ;
+    margin-left: 450px;
+    margin-top: 50px;
+
+} 
+.home{
+    cursor: pointer;
+    border: 3px solid rgb(192, 190, 190);
+    color: #111727;
+    border-radius: 10px;
+    width: fit-content;
+    margin: auto;
+    padding: 15px;
+    margin-top: 15px;
+    font-size: 30px;
+    transition: all .2s ease;
+    background-color: #FFA837 ;
+    margin-left: 150px;
+    margin-top: 50px;
+}

@@ -153,9 +153,9 @@ function updata(){
 
     if(ball.x - ball.radius < 0){
         computer.score++;
-        if(computer.score == 6)
+        if(computer.score == 5)
         {
-            gameover()
+            gameover();
             computer.score=0;
             player.score=0;
             clearInterval(r);
@@ -166,11 +166,12 @@ function updata(){
     else if(ball.x + ball.radius > canvas.width)
     {
         player.score++;
-        if(player.score == 6)
+        if(player.score == 5)
         {
-            alert("player wins");
+            Win();
             computer.score=0;
             player.score=0;
+            clearInterval(r);
           
         }
         resetBall();
@@ -221,5 +222,57 @@ function gameover()
     var pause = document.getElementById("pause");
     p.style.display="none";
     pause.style.display="none"
+    
+    var button = document.createElement("button");
+    var button_text = document.createTextNode("Play Again");
+    button.appendChild(button_text);
+    button.classList.add("but");
     body.append(div);
+    button.setAttribute("onclick","ok()");
+    var home = document.createElement("button");
+    var home_text = document.createTextNode("Home");
+    home.appendChild(home_text);
+    home.classList.add("home");
+    home.setAttribute("onclick","backtohome()");
+    body.append(button);
+    body.append(home);
+}
+function Win()
+{
+    
+    var div = document.createElement("div");
+    var pragraph = document.createElement("p")
+    var text = document.createTextNode("You Win");
+    pragraph.append(text);
+    div.classList.add("over");
+    pragraph.classList.add("pra")
+    div.append(pragraph)
+    body =document.getElementById("body");
+    var p = document.getElementById("parent");
+    var pause = document.getElementById("pause");
+    p.style.display="none";
+    pause.style.display="none"
+    body.append(div);
+    var button = document.createElement("button");
+    var button_text = document.createTextNode("Play Again");
+    button.appendChild(button_text);
+    button.classList.add("but");
+    button.setAttribute("onclick","ok()");
+    var home = document.createElement("button");
+    var home_text = document.createTextNode("Home");
+    home.appendChild(home_text);
+    home.classList.add("home");
+    home.setAttribute("onclick","backtohome()");
+    body.append(button);
+    body.append(home);
+}
+
+function ok()
+{
+    location.reload();
+
+}
+function backtohome()
+{
+   location.href= 'index.html';
 }
