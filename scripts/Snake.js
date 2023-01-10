@@ -47,7 +47,7 @@ var y_apple;
 
 function GameOver()
 {
-    context.fillStyle='white';
+    context.fillStyle='rgb(236, 145, 7)';
     context.textBaseline='middle';
     context.textAlign="30px monospace";
     context.font="30px Arial";
