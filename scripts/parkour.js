@@ -170,8 +170,8 @@ scrollOffset = 0
 
 function animate() {
     requestAnimationFrame(animate);
-    c.fillStyle = 'white';
-    c.fillRect(0,0,canvas.width,canvas.height);
+    // c.fillStyle = 'white';
+    // c.fillRect(0,0,canvas.width,canvas.height);
 
     objects.forEach((obj)=>{
         obj.draw()
